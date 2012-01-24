@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE&sensor=false"></script>
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=geometry&sensor=false"></script>
+		<script type="text/javascript" src="GMaps-Polygon.js"></script>
+
+  	</head>
+  	<body onload="initialize()">
+    		<div id="map_canvas" style="width:800px; height:400px"></div>
+  		<div>
+    			<input id="address" type="textbox" size="50" value="1600 Pennsylvania Avenue, Washington, DC 20502">
+    			<input type="button" value="Go There!" onclick="codeAddress()"></br></br>
+			<input type="button" value="Get Area!" onclick="printArea()">
+			<a id="areaOutput"></a>
+  		</div>
+  	</body>
+</html>
